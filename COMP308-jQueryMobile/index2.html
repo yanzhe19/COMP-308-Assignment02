@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>COMP308 jQueryMobile Demo</title>
+    <!-- CSS SECTION -->
+    <link href="Content/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link href="css/mobile.css" rel="stylesheet" />
+</head>
+<body onload="init();">
+
+    <!-- HOME PAGE WRAPPER -->
+    <div data-role="page" id="home">
+
+        <header data-role="header">
+            <div style="width: 100%; height: 100px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+                 data-controltype="image" id="logo">
+                <img src="Content/images/nav-icons/logo.png" alt="logo" style="position: absolute; top: 10%; left: 50%; margin-left: -16px; margin-top: -18px">
+            </div>
+            <!--<h1>Welcome to Home</h1>-->
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="custom" id="home" data-transition="slide">Home</a></li>
+                    <li><a href="#aboutMe" data-icon="custom" id="about" data-transition="flip">About Me</a></li>
+                    <li><a href="#contacts" data-icon="custom" id="contact" data-transition="slide">Contact Me</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <p>Your Content Goes here</p>
+        </section>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>&copy; 2015 Zhe Yan. All rights reserved.</h4>
+        </footer>
+    </div>
+
+    <div data-role="page" data-control-title="Home" id="test">
+        <div data-role="content">
+            <div style="width: 100%; height: 50px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+                 data-controltype="image" id="logo">
+                <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+            </div>
+            <div data-role="navbar" data-iconpos="top">
+                <ul>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#page1" data-transition="fade" data-theme="" data-icon="">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <div style="width: 100%; height: 55px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+                         data-controltype="image" id="Project">
+                        <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+                    </div>
+                </div>
+                <div class="ui-block-b">
+                    <div style="width: 100%; height: 55px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+                         data-controltype="image" id="Service">
+                        <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+                    </div>
+                </div>
+            </div>
+            <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
+                 data-controltype="image">
+                <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
+            </div>
+        </div>
+        <div data-theme="a" data-role="footer" data-position="fixed">
+            <h3>
+                Copyright 2015
+            </h3>
+            <div>
+                <a href="https://yanzhe19.github.io/" data-transition="fade">
+                    Full Site
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AboutMe PAGE WRAPPER -->
+    <div data-role="page" id="aboutMe">
+        <header data-role="header">
+            <h1>About Me</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#projects" class="ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <section data-role="content">
+            <p>My bio Goes here</p>
+            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+        </section>
+        <footer data-role="footer" data-position="fixed">
+            <h4>CopyRight 2015</h4>
+        </footer>
+    </div>
+
+    <!-- PROJECTS PAGE WRAPPER -->
+    <div data-role="page" id="projects">
+
+        <header data-role="header">
+            <h1>My Projects</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#projects" class="ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <p>Your Project Content Goes here</p>
+
+            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+
+        </section>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>CopyRight 2015</h4>
+        </footer>
+    </div>
+
+    <!-- SERVICES PAGE WRAPPER -->
+    <div data-role="page" id="services">
+
+        <header data-role="header">
+            <h1>My Services</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home"  data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#projects" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#services" class="ui-btn-active ui-state-persist" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <p>Your Services Content Goes here</p>
+
+        </section>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>CopyRight 2015</h4>
+        </footer>
+    </div>
+
+    <!-- CONTACTS PAGE WRAPPER -->
+    <div data-role="page" id="contacts">
+
+        <header data-role="header">
+            <h1>Contact Me</h1>
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#projects" data-icon="gear" data-transition="flip">Projects</a></li>
+                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
+                    <li><a href="#contacts" class="ui-btn-active ui-state-persist" data-icon="info" data-transition="slide">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <section data-role="content">
+            <p>Your Contact info Goes Here</p>
+
+        </section>
+
+        <footer data-role="footer" data-position="fixed">
+            <h4>CopyRight 2015</h4>
+        </footer>
+    </div>
+
+
+    <!-- JavaScript Section -->
+    <script src="Scripts/jquery-1.8.0.min.js"></script>
+    <script src="Scripts/jquery.mobile-1.4.5.min.js"></script>
+
+    <script src="Scripts/mobile.js"></script>
+</body>
+</html>
