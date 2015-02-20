@@ -2,11 +2,11 @@
     display: none !important;
 }
 
-.nav-glyphish-example .ui-btn {
+/*.nav-glyphish-example .ui-btn {
     padding-top: 40px !important;
 }
 
-.nav-glyphish-example .ui-btn:after {
+    .nav-glyphish-example .ui-btn:after {
         width: 30px !important;
         height: 30px !important;
         margin-left: -15px !important;
@@ -15,19 +15,104 @@
         -webkit-box-shadow: none !important;
         -webkit-border-radius: 0 !important;
         border-radius: 0 !important;
-    }
+    }*/
 
-#home:after {
+/*icon navigation style*/
+/*home icon*/
+/*#home:after {
     background: url('../Content/images/nav-icons/home.png') 50% 50% no-repeat;
     background-size: contain;
-}
+}*/
 
+/*about icon*/
 #about:after {
     background: url('../Content/images/nav-icons/me.png') 50% 50% no-repeat;
     background-size: contain;
 }
 
+/*contact icon*/
 #contact:after {
     background: url('../Content/images/nav-icons/contact.png') 50% 50% no-repeat;
     background-size: contain;
+}
+
+/*navigation list style*/
+/*
+.navList {
+    border: dashed black;
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    display: block;
+    vertical-align: bottom;
+}*/
+
+#navContainerUL {
+    vertical-align: bottom;
+    height:20%;
+}
+
+li{
+    position: relative;
+    width:100px;
+    height:80px;
+}
+li span, #Logo{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    /*border:dashed black;*/
+}
+
+/*logo style*/
+#Logo {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    max-height: 80px;
+}
+
+/*logo style*/
+/*#logo {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    /*background-color: #fbfbfb;
+    border: 1px solid #b8b8b8;
+}*/
+
+/*content section style*/
+/*.ui-content {
+    background: url(../Content/images/nav-icons/logo.png) center center fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 100%;
+    border: dashed black;
+}*/
+
+#home, #aboutMe, #projects, #services, #contacts {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    background-color: azure;
+    opacity: 0.9;
+}
+
+
+/*footer style*/
+footer {
+    text-align: center;
+}
+
+/*copyright style*/
+#copyRight {
+    padding-bottom: 0;
+}
+
+/*full site link style*/
+#fullSite {
+    padding: 0;
+    margin: 0;
+    font-size: small;
+    /*border: dotted black;*/
 }

@@ -13,31 +13,52 @@
     <!-- HOME PAGE WRAPPER -->
     <div data-role="page" id="home">
 
+        <!--header section-->
         <header data-role="header">
-            <div style="width: 100%; height: 100px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
-                 data-controltype="image" id="logo">
-                <img src="Content/images/nav-icons/logo.png" alt="logo" style="position: absolute; top: 10%; left: 50%; margin-left: -16px; margin-top: -18px">
-            </div>
-            <!--<h1>Welcome to Home</h1>-->
+
+            <!--Icon Navigation-->
             <div data-role="navbar">
+                <ul id="navContainerUL">
+                    <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="about" data-transition="flip">About Me</a></span></li>
+                    <li class="navList"><span><img class="ui-btn" id="Logo" src="Content/images/nav-icons/logo.png" alt="logo"></span></li>
+                    <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="slide">Contact Me</a></span></li>
+                </ul>
+                <!--<a href="#home" class="ui-btn ui-btn-active ui-state-persist" data-icon="custom" id="home" data-transition="slide"></a>-->
                 <ul>
-                    <li><a href="#home" class="ui-btn-active ui-state-persist" data-icon="custom" id="home" data-transition="slide">Home</a></li>
-                    <li><a href="#aboutMe" data-icon="custom" id="about" data-transition="flip">About Me</a></li>
-                    <li><a href="#contacts" data-icon="custom" id="contact" data-transition="slide">Contact Me</a></li>
+                    <li>
+                        <!--image buttons-->
+                        <button>
+                            <!--<img src="Content/images/nav-icons/logo.png" />-->
+                            <img src="http://lorempixel.com/150/80/" alt="" />
+                        </button>
+                    </li>
+                    <li>
+                        <!--image buttons-->
+                        <button>
+                            <!--<img src="Content/images/nav-icons/logo.png" />-->
+                            <img src="http://lorempixel.com/150/80/" alt="" />
+                        </button>
+                    </li>
                 </ul>
             </div>
+
         </header>
 
+        <!--Content Section-->
         <section data-role="content">
             <p>Your Content Goes here</p>
         </section>
 
+        <!--Footer and copyright statement-->
         <footer data-role="footer" data-position="fixed">
-            <h4>&copy; 2015 Zhe Yan. All rights reserved.</h4>
+            <h5 id="copyRight">&copy; 2015 Zhe Yan. All rights reserved.</h5>
+            <!--full site link-->
+            <a id="fullSite" href="http://yanzhe19.github.io/" data-role="none">Full Site</a>
         </footer>
+
     </div>
 
-    <div data-role="page" data-control-title="Home" id="test">
+    <!--<div data-role="page" data-control-title="Home" id="test">
         <div data-role="content">
             <div style="width: 100%; height: 50px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
                  data-controltype="image" id="logo">
@@ -91,7 +112,7 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
     <!-- AboutMe PAGE WRAPPER -->
@@ -150,7 +171,7 @@
             <h1>My Services</h1>
             <div data-role="navbar">
                 <ul>
-                    <li><a href="#home"  data-icon="home" data-transition="slide">Home</a></li>
+                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
                     <li><a href="#projects" data-icon="gear" data-transition="flip">Projects</a></li>
                     <li><a href="#services" class="ui-btn-active ui-state-persist" data-icon="grid" data-transition="slide">Services</a></li>
                     <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
