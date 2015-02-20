@@ -2,7 +2,27 @@
     display: none !important;
 }
 
-/*.nav-glyphish-example .ui-btn {
+/*page wrapper style*/
+#wrapper {
+    margin-left: 5%;
+    margin-right: 5%;
+    opacity: 0.9;
+}
+
+/*page style*/
+.ui-page {
+    /*-khtml-opacity: .50;
+    -moz-opacity: .50;
+    -ms-filter: "alpha(opacity=50)";
+    filter: alpha(opacity=50);
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.5);*/
+    opacity: .85;
+    background-image: url('../Content/images/background.jpg');
+    background-size: cover;
+}
+
+/*icon navigation style*/
+.nav-glyphish-example .ui-btn {
     padding-top: 40px !important;
 }
 
@@ -15,17 +35,10 @@
         -webkit-box-shadow: none !important;
         -webkit-border-radius: 0 !important;
         border-radius: 0 !important;
-    }*/
-
-/*icon navigation style*/
-/*home icon*/
-/*#home:after {
-    background: url('../Content/images/nav-icons/home.png') 50% 50% no-repeat;
-    background-size: contain;
-}*/
+    }
 
 /*about icon*/
-#about:after {
+#aboutIcon:after {
     background: url('../Content/images/nav-icons/me.png') 50% 50% no-repeat;
     background-size: contain;
 }
@@ -47,22 +60,29 @@
     vertical-align: bottom;
 }*/
 
+/*navigation bar ul style*/
 #navContainerUL {
     vertical-align: bottom;
-    height:20%;
-}
-
-li{
-    position: relative;
-    width:100px;
-    height:80px;
-}
-li span, #Logo{
-    position:absolute;
-    width:100%;
-    bottom:0;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 20%;
     /*border:dashed black;*/
 }
+
+/*navigation bar li style*/
+li {
+    position: relative;
+    width: 100px;
+    height: 80px;
+}
+
+    /*navigation bar li span and logo style*/
+    li span, #Logo {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        /*border:dashed black;*/
+    }
 
 /*logo style*/
 #Logo {
@@ -89,15 +109,6 @@ li span, #Logo{
     min-height: 100%;
     border: dashed black;
 }*/
-
-#home, #aboutMe, #projects, #services, #contacts {
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 90%;
-    background-color: azure;
-    opacity: 0.9;
-}
-
 
 /*footer style*/
 footer {

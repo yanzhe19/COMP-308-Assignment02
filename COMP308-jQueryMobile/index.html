@@ -6,56 +6,59 @@
     <title>COMP308 jQueryMobile Demo</title>
     <!-- CSS SECTION -->
     <link href="Content/jquery.mobile-1.4.5.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/themes/mobileTheme.min.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+
     <link href="css/mobile.css" rel="stylesheet" />
 </head>
 <body onload="init();">
 
     <!-- HOME PAGE WRAPPER -->
-    <div data-role="page" id="home">
+    <div data-role="page" id="home" data-theme="f">
+        <div id="wrapper">
+            <!--header section-->
+            <header data-role="header">
 
-        <!--header section-->
-        <header data-role="header">
+                <!--Icon Navigation-->
+                <div data-role="navbar">
+                    <ul id="navContainerUL">
+                        <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="aboutIcon" data-transition="flip">About Me</a></span></li>
+                        <li class="navList"><span><img class="ui-btn" id="Logo" src="Content/images/nav-icons/logo.png" alt="logo"></span></li>
+                        <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="slide">Contact Me</a></span></li>
+                    </ul>
+                    <!--<a href="#home" class="ui-btn ui-btn-active ui-state-persist" data-icon="custom" id="home" data-transition="slide"></a>-->
+                    <ul>
+                        <li>
+                            <!--image buttons-->
+                            <button>
+                                <!--<img src="Content/images/nav-icons/logo.png" />-->
+                                <img src="http://lorempixel.com/150/80/" alt="" />
+                            </button>
+                        </li>
+                        <li>
+                            <!--image buttons-->
+                            <button>
+                                <!--<img src="Content/images/nav-icons/logo.png" />-->
+                                <img src="http://lorempixel.com/150/80/" alt="" />
+                            </button>
+                        </li>
+                    </ul>
+                </div>
 
-            <!--Icon Navigation-->
-            <div data-role="navbar">
-                <ul id="navContainerUL">
-                    <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="about" data-transition="flip">About Me</a></span></li>
-                    <li class="navList"><span><img class="ui-btn" id="Logo" src="Content/images/nav-icons/logo.png" alt="logo"></span></li>
-                    <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="slide">Contact Me</a></span></li>
-                </ul>
-                <!--<a href="#home" class="ui-btn ui-btn-active ui-state-persist" data-icon="custom" id="home" data-transition="slide"></a>-->
-                <ul>
-                    <li>
-                        <!--image buttons-->
-                        <button>
-                            <!--<img src="Content/images/nav-icons/logo.png" />-->
-                            <img src="http://lorempixel.com/150/80/" alt="" />
-                        </button>
-                    </li>
-                    <li>
-                        <!--image buttons-->
-                        <button>
-                            <!--<img src="Content/images/nav-icons/logo.png" />-->
-                            <img src="http://lorempixel.com/150/80/" alt="" />
-                        </button>
-                    </li>
-                </ul>
-            </div>
+            </header>
 
-        </header>
+            <!--Content Section-->
+            <section data-role="content">
+                <p>Your Content Goes here</p>
+            </section>
 
-        <!--Content Section-->
-        <section data-role="content">
-            <p>Your Content Goes here</p>
-        </section>
-
-        <!--Footer and copyright statement-->
-        <footer data-role="footer" data-position="fixed">
-            <h5 id="copyRight">&copy; 2015 Zhe Yan. All rights reserved.</h5>
-            <!--full site link-->
-            <a id="fullSite" href="http://yanzhe19.github.io/" data-role="none">Full Site</a>
-        </footer>
-
+            <!--Footer and copyright statement-->
+            <footer data-role="footer" data-position="fixed">
+                <h5 id="copyRight">&copy; 2015 Zhe Yan. All rights reserved.</h5>
+                <!--full site link-->
+                <a id="fullSite" href="http://yanzhe19.github.io/" data-role="none">Full Site</a>
+            </footer>
+        </div>
     </div>
 
     <!--<div data-role="page" data-control-title="Home" id="test">
@@ -113,8 +116,6 @@
             </div>
         </div>
     </div>-->
-
-
     <!-- AboutMe PAGE WRAPPER -->
     <div data-role="page" id="aboutMe">
         <header data-role="header">
