@@ -6,6 +6,7 @@
 #wrapper {
     margin-left: 5%;
     margin-right: 5%;
+    background-color: azure;
     opacity: 0.9;
 }
 
@@ -109,6 +110,37 @@ li {
     min-height: 100%;
     border: dashed black;
 }*/
+
+/*project image button style*/
+#projectButton, #serviceButton {
+    margin:0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    /*border: dashed black;*/
+}
+
+#projectBtnA, #serviceBtnA {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    /*border: dashed black;*/
+}
+
+#projectBlock, #serviceBlock {
+    text-align: center;
+    /*border: dashed black;*/
+}
+
+/*image button class style*/
+.imgButton {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border: dashed black;
+}
 
 /*footer style*/
 footer {
