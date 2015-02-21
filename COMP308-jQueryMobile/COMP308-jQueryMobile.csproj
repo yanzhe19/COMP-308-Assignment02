@@ -65,6 +65,35 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\data1\images\1.jpg" />
+    <Content Include="assets\data1\images\2.jpg" />
+    <Content Include="assets\data1\images\3.png" />
+    <Content Include="assets\data1\images\4.png" />
+    <Content Include="assets\data1\images\5.jpg" />
+    <Content Include="assets\data1\images\6.jpg" />
+    <Content Include="assets\data1\tooltips\1.jpg" />
+    <Content Include="assets\data1\tooltips\2.jpg" />
+    <Content Include="assets\data1\tooltips\3.png" />
+    <Content Include="assets\data1\tooltips\4.png" />
+    <Content Include="assets\data1\tooltips\5.jpg" />
+    <Content Include="assets\data1\tooltips\6.jpg" />
+    <Content Include="assets\img\background.jpg" />
+    <Content Include="assets\img\icon\contact.svg" />
+    <Content Include="assets\img\icon\github.svg" />
+    <Content Include="assets\img\icon\home.svg" />
+    <Content Include="assets\img\icon\me.svg" />
+    <Content Include="assets\img\icon\project.svg" />
+    <Content Include="assets\img\icon\service.svg" />
+    <Content Include="assets\img\icon\webicon-facebook-m.png" />
+    <Content Include="assets\img\icon\webicon-facebook.png" />
+    <Content Include="assets\img\icon\webicon-linkedin-m.png" />
+    <Content Include="assets\img\icon\webicon-linkedin.png" />
+    <Content Include="assets\img\icon\webicon-twitter-m.png" />
+    <Content Include="assets\img\icon\webicon-twitter.png" />
+    <Content Include="assets\img\icon\webicon-youtube-m.png" />
+    <Content Include="assets\img\icon\webicon-youtube.png" />
+    <Content Include="assets\img\logo.png" />
+    <Content Include="assets\img\zhe_profile photo.jpg" />
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\background.jpg" />
     <Content Include="Content\images\icons-png\action-black.png" />
@@ -392,6 +421,18 @@
     <Content Include="css\themes\jquery.mobile.icons.min.css" />
     <Content Include="css\themes\mobileTheme.css" />
     <Content Include="css\themes\mobileTheme.min.css" />
+    <Content Include="engine1\arrows.png" />
+    <Content Include="engine1\bg.png" />
+    <Content Include="engine1\bullet.png" />
+    <Content Include="engine1\jquery.js" />
+    <Content Include="engine1\pause.png" />
+    <Content Include="engine1\play.png" />
+    <Content Include="engine1\script.js" />
+    <Content Include="engine1\style.css" />
+    <Content Include="engine1\style.mod.css" />
+    <Content Include="engine1\triangle.png" />
+    <Content Include="engine1\wowslider.js" />
+    <Content Include="engine1\wowslider.mod.js" />
     <Content Include="index2.html" />
     <Content Include="index.html" />
     <Content Include="packages.config" />

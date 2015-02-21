@@ -6,8 +6,12 @@
 #wrapper {
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 3%;
+    /*padding:0;
+    height: 99%;*/
     background-color: azure;
     opacity: 0.9;
+    /*border:dashed black;*/
 }
 
 /*page style*/
@@ -20,6 +24,7 @@
     opacity: .85;
     background-image: url('../Content/images/background.jpg');
     background-size: cover;
+    /*border:dashed black;*/
 }
 
 /*icon navigation style*/
@@ -93,27 +98,10 @@ li {
     max-height: 80px;
 }
 
-/*logo style*/
-/*#logo {
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    /*background-color: #fbfbfb;
-    border: 1px solid #b8b8b8;
-}*/
-
-/*content section style*/
-/*.ui-content {
-    background: url(../Content/images/nav-icons/logo.png) center center fixed;
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 100%;
-    border: dashed black;
-}*/
 
 /*project image button style*/
 #projectButton, #serviceButton {
-    margin:0;
+    margin: 0;
     padding: 0;
     text-align: center;
     width: 100%;
@@ -142,6 +130,21 @@ li {
     border: dashed black;
 }
 
+/*welcome statement style*/
+#heading_supersize {
+    font-size: 12.5vmin;
+    text-align: center;
+    font-weight: bold;
+    line-height: 15.5vmin;
+    margin: 0 0 10px;
+    color: #212121;
+}
+
+/*welcome style*/
+#welcomeHome {
+    text-align:center;
+}
+
 /*footer style*/
 footer {
     text-align: center;
@@ -156,6 +159,6 @@ footer {
 #fullSite {
     padding: 0;
     margin: 0;
-    font-size: small;
+    font-size: medium;
     /*border: dotted black;*/
 }
