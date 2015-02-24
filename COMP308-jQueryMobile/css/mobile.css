@@ -83,12 +83,21 @@ li {
 }
 
     /*navigation bar li span and logo style*/
-    li span, #Logo {
+    li span {
         position: absolute;
         width: 100%;
         bottom: 0;
+        text-align: center;
         /*border:dashed black;*/
     }
+
+/*style for a tag for logo*/
+/*#logoLink {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        border:dashed black;
+    }*/
 
 /*logo style*/
 #Logo {
@@ -96,6 +105,7 @@ li {
     margin: 0;
     text-align: center;
     max-height: 80px;
+    border: dashed;
 }
 
 
@@ -140,9 +150,33 @@ li {
     color: #212121;
 }
 
+/*Social network icon*/
+.ui-icon-myLinkedin:after {
+    background-image: url('../assets/img/icon/webicon-linkedin-m.png');
+    /* resize the icon*/
+    background-size: 21px 21px;
+}
+
+.ui-icon-myFacebook:after {
+    background-image: url('../assets/img/icon/webicon-facebook-m.png');
+    /* resize the icon*/
+    background-size: 18px 18px;
+}
+
+.ui-icon-myYoutube:after {
+    background-image: url('../assets/img/icon/webicon-youtube-m.png');
+    /* resize the icon*/
+    background-size: 18px 18px;
+}
+.ui-icon-myTwitter:after {
+    background-image: url('../assets/img/icon/webicon-twitter-m.png');
+    /* resize the icon*/
+    background-size: 18px 18px;
+}
+
 /*welcome style*/
 #welcomeHome {
-    text-align:center;
+    text-align: center;
 }
 
 /*footer style*/

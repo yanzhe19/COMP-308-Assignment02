@@ -24,7 +24,7 @@ button,
 .ui-btn {
 	font-size: 1em;
 	line-height: 1.3;
-	  font-family: sans-serif /*{global-font-family}*/;
+	 font-family: sans-serif /*{global-font-family}*/;
 }
 legend,
 .ui-input-text input,
@@ -1069,7 +1069,7 @@ html .ui-body-f .ui-body-inherit,
 html body .ui-group-theme-f .ui-body-inherit,
 html .ui-panel-page-container-f {
 	background-color: #e6e6e6 /*{f-body-background-color}*/;
-	border-color: #7e7e7e /*{f-body-border}*/;
+	border-color: #dddddd /*{f-body-border}*/;
 	color: #000000 /*{f-body-color}*/;
 	text-shadow: 0 /*{f-body-shadow-x}*/ 1px /*{f-body-shadow-y}*/ 0 /*{f-body-shadow-radius}*/ #eeeeee /*{f-body-shadow-color}*/;
 }

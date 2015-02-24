@@ -26,16 +26,19 @@
                 <!--Icon Navigation-->
                 <div data-role="navbar">
                     <ul id="navContainerUL">
-                        <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="aboutIcon" data-transition="flip">About Me</a></span></li>
-                        <li class="navList"><span><img class="ui-btn" id="Logo" src="Content/images/nav-icons/logo.png" alt="logo"></span></li>
-                        <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="slide">Contact Me</a></span></li>
+                        <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="aboutIcon" data-transition="pop">About Me</a></span></li>
+                        <li class="navList">
+                            <!--<a class="ui-btn ui-shadow ui-corner-all" href="#home" id="logoLink"><img class="ui-btn" id="Logo" src="Content/images/nav-icons/logo.png" alt="logo"></a>-->
+                            <div><a href="#home" class="ui-btn ui-shadow ui-corner-all"><img id="projectButton" src="Content/images/nav-icons/logo.png" alt="logo" /></a></div>
+                        </li>
+                        <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="pop">Contact Me</a></span></li>
                         <!--<a href="#home" class="ui-btn ui-btn-active ui-state-persist" data-icon="custom" id="home" data-transition="slide"></a>-->
                     </ul>
 
                     <!--image button-->
                     <div class="ui-grid-a ">
-                        <div class="ui-block-a" id="projectBlock"><a href="#" class="ui-btn ui-shadow ui-corner-all" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
-                        <div class="ui-block-b" id="serviceBlock"><a href="#" class="ui-btn ui-shadow ui-corner-all" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
                     </div>
                 </div>
             </header>
@@ -43,10 +46,10 @@
             <!--Content Section-->
             <section data-role="content">
                 <!--my welcome statement-->
-                    <div>
-                        <h1 id="heading_supersize">HELLO, I'M DANIEL</h1>
-                        <h3 id="welcomeHome">Welcome to my site!</h3>
-                    </div>
+                <div>
+                    <h1 id="heading_supersize">HELLO, I'M DANIEL</h1>
+                    <h3 id="welcomeHome">Welcome to my site!</h3>
+                </div>
 
                 <hr />
 
@@ -91,81 +94,61 @@
         </div>
     </div>
 
-    <!--<div data-role="page" data-control-title="Home" id="test">
-        <div data-role="content">
-            <div style="width: 100%; height: 50px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
-                 data-controltype="image" id="logo">
-                <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
-            </div>
-            <div data-role="navbar" data-iconpos="top">
-                <ul>
-                    <li>
-                        <a href="#page1" data-transition="fade" data-theme="" data-icon="">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#page1" data-transition="fade" data-theme="" data-icon="">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#page1" data-transition="fade" data-theme="" data-icon="">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="ui-grid-a">
-                <div class="ui-block-a">
-                    <div style="width: 100%; height: 55px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
-                         data-controltype="image" id="Project">
-                        <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
-                    </div>
-                </div>
-                <div class="ui-block-b">
-                    <div style="width: 100%; height: 55px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
-                         data-controltype="image" id="Service">
-                        <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
-                    </div>
-                </div>
-            </div>
-            <div style="width: 288px; height: 200px; position: relative; background-color: #fbfbfb; border: 1px solid #b8b8b8;"
-                 data-controltype="image">
-                <img src="https://codiqa.com/static/images/v2/image.png" alt="image" style="position: absolute; top: 50%; left: 50%; margin-left: -16px; margin-top: -18px">
-            </div>
-        </div>
-        <div data-theme="a" data-role="footer" data-position="fixed">
-            <h3>
-                Copyright 2015
-            </h3>
-            <div>
-                <a href="https://yanzhe19.github.io/" data-transition="fade">
-                    Full Site
-                </a>
-            </div>
-        </div>
-    </div>-->
     <!-- AboutMe PAGE WRAPPER -->
-    <div data-role="page" id="aboutMe">
-        <header data-role="header">
-            <h1>About Me</h1>
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-                    <li><a href="#projects" class="ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
-                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
-                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
-                </ul>
-            </div>
-        </header>
-        <section data-role="content">
-            <p>My bio Goes here</p>
-            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
-        </section>
-        <footer data-role="footer" data-position="fixed">
-            <h4>CopyRight 2015</h4>
-        </footer>
+    <div data-role="page" id="aboutMe" data-theme="f">
+        <div id="wrapper">
+            <!--header section-->
+            <header data-role="header">
+
+                <!--Icon Navigation-->
+                <div data-role="navbar">
+                    <ul id="navContainerUL">
+                        <li class="navList"><span><a href="#aboutMe" class="ui-btn-active ui-state-persist" data-icon="custom" id="aboutIcon" data-transition="pop">About Me</a></span></li>
+                        <li class="navList">
+                            <div><a href="#home" class="ui-btn ui-shadow ui-corner-all"><img id="projectButton" src="Content/images/nav-icons/logo.png" alt="logo" /></a></div>
+                        </li>
+                        <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="pop">Contact Me</a></span></li>
+                    </ul>
+
+                    <!--image button-->
+                    <div class="ui-grid-a ">
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
+                    </div>
+                </div>
+            </header>
+
+            <section data-role="content">
+                <p>My bio Goes here</p>
+                <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+
+                <!--<div data-role="controlgroup" data-type="horizontal">
+                    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myLinkedin ui-btn-inline">Linkedin</a>
+                    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myFacebook ui-btn-inline">Facebook</a>
+                    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myYoutube ui-btn-inline">Youtube</a>
+                    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myTwitter ui-btn-inline">Twitter</a>
+                </div>-->
+
+                <div class="ui-corner-all custom-corners">
+                    <div class="ui-bar ui-bar-f">
+                        <h3>Keep Connected with me!</h3>
+                    </div>
+                    <div class="ui-body ui-body-f">
+                        <div class="ui-nodisc-icon">
+                            <!--<button href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myLinkedin">myicon</button>-->
+                            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myLinkedin ui-btn-inline">Linkedin</a>
+                            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myFacebook ui-btn-inline">Facebook</a>
+                            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myYoutube ui-btn-inline">Youtube</a>
+                            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myTwitter ui-btn-inline">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <footer data-role="footer" data-position="fixed">
+                <h4>CopyRight 2015</h4>
+            </footer>
+        </div>
     </div>
 
     <!-- PROJECTS PAGE WRAPPER -->
