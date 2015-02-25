@@ -50,9 +50,7 @@
                     <h1 id="heading_supersize">HELLO, I'M DANIEL</h1>
                     <h3 id="welcomeHome">Welcome to my site!</h3>
                 </div>
-
                 <hr />
-
                 <p>Demo of my work!</p>
                 <!--Start slider Section-->
                 <!--Double click to open the link with specific image-->
@@ -119,63 +117,178 @@
             </header>
 
             <section data-role="content">
-                <p>My bio Goes here</p>
-                <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
+                <h1 id="subheader">About Daniel</h1>
+                <!--my personal tagline-->
+                <h2 id="tagline_text" class="subheader text-center">Lovely code, nonpareil</h2>
+                <br />
+                <div>
+                    <img src="assets/img/zhe_profile%20photo.jpg" id="myImage" alt="" />
+                </div>
 
-                <!--<div data-role="controlgroup" data-type="horizontal">
-                    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myLinkedin ui-btn-inline">Linkedin</a>
-                    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myFacebook ui-btn-inline">Facebook</a>
-                    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myYoutube ui-btn-inline">Youtube</a>
-                    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myTwitter ui-btn-inline">Twitter</a>
-                </div>-->
+                <!-- my  mission  statement-->
+                <div>
+                    <ul id="missionState">
+                        <li>"Talk is cheap. Show me the code." I want to demo the project I did. </li>
+                        <li>Currently, I am an active job seeker. Feel free to contact me if you are interested.</li>
+                        <li>You can easily contact me through this website.</li>
+                    </ul>
+                </div>
 
+
+                <!--My bio section-->
                 <div class="ui-corner-all custom-corners">
-                    <div class="ui-bar ui-bar-f">
-                        <h3>Keep Connected with me!</h3>
+                    <!--header-->
+                    <div class="ui-bar">
+                        <h1 id="subheader">My bio</h1>
                     </div>
-                    <div class="ui-body ui-body-f">
-                        <div class="ui-nodisc-icon">
-                            <!--<button href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myLinkedin">myicon</button>-->
-                            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myLinkedin ui-btn-inline">Linkedin</a>
-                            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myFacebook ui-btn-inline">Facebook</a>
-                            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myYoutube ui-btn-inline">Youtube</a>
-                            <a href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-myTwitter ui-btn-inline">Twitter</a>
+
+                    <!--body of the collapsible part-->
+                    <div class="ui-body">
+                        <div data-role="collapsibleset" data-theme="f" data-content-theme="f">
+                            <div data-role="collapsible">
+                                <!--Education part-->
+                                <h4>Education</h4>
+                                <p>
+                                    <b>Software Engineering Technology Advanced Diploma</b>
+                                    <br />Centennial College
+                                    <br />Sept 2012-April 2015
+
+                                </p>
+                            </div>
+                            <div data-role="collapsible">
+                                <!--Revalent course part-->
+                                <h4>Courses</h4>
+                                <p>
+                                    <ul>
+                                        <li>Programming 1, 2, 3</li>
+                                        <li>Software Testing</li>
+                                        <li>Advanced Database Concepts</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div data-role="collapsible">
+                                <!--work experience part-->
+                                <h4>Experience</h4>
+                                <p>
+                                    <b>Peer Technology Mentor (Co-op Work Term)</b>
+                                    <br />Centennial College
+                                    <br />Jan 2014- Apr 2014
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!--back button-->
+                <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Go Back</a>
             </section>
-            <footer data-role="footer" data-position="fixed">
-                <h4>CopyRight 2015</h4>
+
+            <!--Footer and copyright statement-->
+            <footer data-role="footer">
+                <h5 id="copyRight">&copy; 2015 Zhe Yan. All rights reserved.</h5>
+                <!--full site link-->
+                <a id="fullSite" href="http://yanzhe19.github.io/" data-role="none">Full Site</a>
             </footer>
         </div>
     </div>
 
     <!-- PROJECTS PAGE WRAPPER -->
-    <div data-role="page" id="projects">
+    <div data-role="page" id="projects" data-theme="f">
+        <div id="wrapper">
+            <!--header section-->
+            <header data-role="header">
 
-        <header data-role="header">
-            <h1>My Projects</h1>
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-                    <li><a href="#projects" class="ui-btn-active ui-state-persist" data-icon="gear" data-transition="flip">Projects</a></li>
-                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
-                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
+                <!--Icon Navigation-->
+                <div data-role="navbar">
+                    <ul id="navContainerUL">
+                        <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="aboutIcon" data-transition="pop">About Me</a></span></li>
+                        <li class="navList">
+                            <!--<a class="ui-btn ui-shadow ui-corner-all" href="#home" id="logoLink"><img class="ui-btn" id="Logo" src="Content/images/nav-icons/logo.png" alt="logo"></a>-->
+                            <div><a href="#home" class="ui-btn ui-shadow ui-corner-all"><img id="projectButton" src="Content/images/nav-icons/logo.png" alt="logo" /></a></div>
+                        </li>
+                        <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="pop">Contact Me</a></span></li>
+                        <!--<a href="#home" class="ui-btn ui-btn-active ui-state-persist" data-icon="custom" id="home" data-transition="slide"></a>-->
+                    </ul>
+
+                    <!--image button-->
+                    <div class="ui-grid-a ">
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
+                    </div>
+                </div>
+            </header>
+
+            <!--Content Section-->
+            <section data-role="content">
+                <p>Your Project Content Goes here</p>
+
+                <ul data-role="listview" data-inset="true">
+                    <li>
+                        <a href="#">
+                            <img src="assets/data1/images/1.jpg" alt="" />
+                            <h2>Broken Bells</h2>
+                            <p>Broken Bells</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/data1/images/3.png" alt="" />
+                            <h2>Warning</h2>
+                            <p>Hot Chip</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/data1/images/5.jpg" alt="" />
+                            <h2>Wolfgang Amadeus Phoenix</h2>
+                            <p>Phoenix</p>
+                        </a>
+                    </li>
                 </ul>
-            </div>
-        </header>
 
-        <section data-role="content">
-            <p>Your Project Content Goes here</p>
+                <!--reference formated-->
+                <ul data-role="listview" data-inset="true">
+                    <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
+                    <li>
+                        <a href="index.html">
+                            <h2>Stephen Weber</h2>
+                            <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                            <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html">
+                            <h2>jQuery Team</h2>
+                            <p><strong>Boston Conference Planning</strong></p>
+                            <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+                            <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+                        </a>
+                    </li>
+                    <li data-role="list-divider">Thursday, October 7, 2010 <span class="ui-li-count">1</span></li>
+                    <li>
+                        <a href="index.html">
+                            <h2>Avery Walker</h2>
+                            <p><strong>Re: Dinner Tonight</strong></p>
+                            <p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait!</p>
+                            <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+                        </a>
+                    </li>
+                </ul>
 
-            <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Back</a>
 
-        </section>
 
-        <footer data-role="footer" data-position="fixed">
-            <h4>CopyRight 2015</h4>
-        </footer>
+                <!--back button-->
+                <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Go Back</a>
+            </section>
+
+            <!--Footer and copyright statement-->
+            <footer data-role="footer">
+                <h5 id="copyRight">&copy; 2015 Zhe Yan. All rights reserved.</h5>
+                <!--full site link-->
+                <a id="fullSite" href="http://yanzhe19.github.io/" data-role="none">Full Site</a>
+            </footer>
+        </div>
     </div>
 
     <!-- SERVICES PAGE WRAPPER -->
@@ -220,6 +333,20 @@
 
         <section data-role="content">
             <p>Your Contact info Goes Here</p>
+
+            <!--Social network icons-->
+            <div class="ui-corner-all" id="socialNetwork">
+                <div class="ui-bar ui-bar-f">
+                    <h3>Keep Connected with me!</h3>
+                </div>
+                <div class="ui-body ui-body-f">
+                    <!--<button href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myLinkedin">myicon</button>-->
+                    <a href="http://ca.linkedin.com/in/ZheYan" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myLinkedin ui-btn-inline">Linkedin</a>
+                    <a href="https://www.facebook.com/daniel.yan.79827" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myFacebook ui-btn-inline">Facebook</a>
+                    <a href="https://www.youtube.com/channel/UCI2dR0rLodmXwa00mqjb2pg/feed?view_as=public" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myYoutube ui-btn-inline">Youtube</a>
+                    <a href="https://twitter.com/daniel_yan19" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myTwitter ui-btn-inline">Twitter</a>
+                </div>
+            </div>
 
         </section>
 

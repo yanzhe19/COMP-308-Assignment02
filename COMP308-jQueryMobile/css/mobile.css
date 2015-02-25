@@ -76,7 +76,7 @@
 }
 
 /*navigation bar li style*/
-li {
+.navList {
     position: relative;
     width: 100px;
     height: 80px;
@@ -150,33 +150,129 @@ li {
     color: #212121;
 }
 
+/*home page welcome statment style*/
+#welcomeHome {
+    font-size: 6vmin;
+    text-align: center;
+    margin-bottom: 0;
+    color: #767474;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+/* subheader Style*/
+#subheader {
+    font-size: 6vmin;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #767474;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
+/*Tagline style*/
+#tagline_text {
+    font-size: 5vmin;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #767474;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    /*font-style: italic;*/
+}
+/*About me page my image style*/
+#myImage {
+    height: auto;
+    width: 100%;
+}
+
+/*about me page mission style*/
+#missionState {
+    list-style-type: disc;
+    font-size:medium;
+}
 /*Social network icon*/
 .ui-icon-myLinkedin:after {
     background-image: url('../assets/img/icon/webicon-linkedin-m.png');
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0px;
+    background-color: transparent;
+    border-radius: 0;
     /* resize the icon*/
-    background-size: 21px 21px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px; /*Adjust this value to position the icon*/
+    margin-left: -15px;
 }
 
 .ui-icon-myFacebook:after {
     background-image: url('../assets/img/icon/webicon-facebook-m.png');
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0px;
+    background-color: transparent;
+    border-radius: 0;
     /* resize the icon*/
-    background-size: 18px 18px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px; /*Adjust this value to position the icon*/
+    margin-left: -15px;
 }
 
 .ui-icon-myYoutube:after {
     background-image: url('../assets/img/icon/webicon-youtube-m.png');
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0px;
+    background-color: transparent;
+    border-radius: 0;
     /* resize the icon*/
-    background-size: 18px 18px;
-}
-.ui-icon-myTwitter:after {
-    background-image: url('../assets/img/icon/webicon-twitter-m.png');
-    /* resize the icon*/
-    background-size: 18px 18px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px; /*Adjust this value to position the icon*/
+    margin-left: -15px;
 }
 
-/*welcome style*/
-#welcomeHome {
+.ui-icon-myTwitter:after {
+    background-image: url('../assets/img/icon/webicon-twitter-m.png');
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0px;
+    background-color: transparent;
+    border-radius: 0;
+    /* resize the icon*/
+    width: 30px;
+    height: 30px;
+    margin-top: -15px; /*Adjust this value to position the icon*/
+    margin-left: -15px;
+}
+
+/*Social network div class style*/
+#socialNetwork {
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*social network body style*/
+.ui-corner-all .ui-body {
+    padding-top: 0;
+    margin-top: 0;
+    -webkit-border-bottom-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    -webkit-border-bottom-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+/*social network body style*/
+.ui-corner-all .ui-bar {
+    padding-top: 0;
+    margin-top: 0;
+    -webkit-border-top-left-radius: inherit;
+    border-top-left-radius: inherit;
+    -webkit-border-top-right-radius: inherit;
+    border-top-right-radius: inherit;
 }
 
 /*footer style*/
