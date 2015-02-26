@@ -1,4 +1,8 @@
-﻿.container > .infoBoxList > .shareInfoBox {
+﻿/*  File  name: mobile.css,  Author's  name: Zhe Yan (300706310),
+    web  site  name: Zhe's portfolio mobile version, 
+    file  description: this is the css file of mobile portfolio site*/
+
+.container > .infoBoxList > .shareInfoBox {
     display: none !important;
 }
 

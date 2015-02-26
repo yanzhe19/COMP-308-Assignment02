@@ -1,11 +1,15 @@
 ﻿<!DOCTYPE html>
+<!--File  name: index.html,  Author's  name: Zhe Yan (300706310),
+    web  site  name: Zhe's portfolio mobile version, 
+    file  description: this is a one page web site. All the webpages are in this file
+    It contains home, contact me, about me, service, peoject and project subpages.-->
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-    <title>COMP308 jQueryMobile Assignment2</title>
+    <title>Zhe's Portfolio</title>
 
-    <!-- CSS SECTION -->
+    <!-- +++++++++++++++++++CSS SECTION+++++++++++++++++++++-->
     <!--JQuery Mobile CDN CSS-->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.3/jquery.mobile.min.css" />
 
@@ -127,6 +131,7 @@
                 </div>
             </header>
 
+            <!--Content Section-->
             <section data-role="content">
                 <h1 id="subheader">About Daniel</h1>
                 <!--my personal tagline-->
@@ -164,7 +169,6 @@
                                     <b>Software Engineering Technology Advanced Diploma</b>
                                     <br />Centennial College
                                     <br />Sept 2012-April 2015
-
                                 </p>
                             </div>
                             <div data-role="collapsible">
@@ -233,6 +237,7 @@
                 <h1 id="subheader">Projects</h1>
                 <ul data-role="listview" data-inset="true" class="has-special-thumb">
                     <li>
+                        <!--first project-->
                         <a href="#helpDeskProject">
                             <div class="thumbContainer">
                                 <img src="assets/data1/images/1.jpg" alt="" />
@@ -242,6 +247,7 @@
                         </a>
                     </li>
                     <li>
+                        <!--second project-->
                         <a href="#healthTrackingProject">
                             <div class="thumbContainer">
                                 <img src="assets/data1/images/3.png" alt="" />
@@ -251,6 +257,7 @@
                         </a>
                     </li>
                     <li>
+                        <!--third project-->
                         <a href="#InventorySystemProject">
                             <div class="thumbContainer">
                                 <img src="assets/data1/images/5.jpg" alt="" />
@@ -300,6 +307,7 @@
                 </div>
             </header>
 
+            <!--content section-->
             <section data-role="content">
                 <!--software developer service-->
                 <h1 id="subheader">Software Developer</h1>
@@ -381,10 +389,12 @@
                 </div>
             </header>
 
+            <!--content section-->
             <section data-role="content">
                 <h1 id="subheader">Contact</h1>
                 <p>I'd love to hear from you. Want to hire me? Any comments or ideas? Don't hesitate, talk to me!</p>
 
+                <!--contact me form-->
                 <form data-parsley-validate id="contactForm">
                     <label for="name">Name : <span>*</span></label>
                     <input type="text" placeholder="Name" required />

@@ -433,7 +433,6 @@
     <Content Include="engine1\triangle.png" />
     <Content Include="engine1\wowslider.js" />
     <Content Include="engine1\wowslider.mod.js" />
-    <Content Include="index2.html" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <None Include="Scripts\jquery-1.8.0.intellisense.js" />
