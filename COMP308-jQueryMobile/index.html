@@ -212,7 +212,7 @@
 
                     <!--image button-->
                     <div class="ui-grid-a ">
-                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all ui-btn-active ui-state-persist" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
                         <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
                     </div>
                 </div>
@@ -265,28 +265,43 @@
     </div>
 
     <!-- SERVICES PAGE WRAPPER -->
-    <div data-role="page" id="services">
+    <div data-role="page" id="services" data-theme="f">
+        <div id="wrapper">
+            <!--header section-->
+            <header data-role="header">
 
-        <header data-role="header">
-            <h1>My Services</h1>
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-                    <li><a href="#projects" data-icon="gear" data-transition="flip">Projects</a></li>
-                    <li><a href="#services" class="ui-btn-active ui-state-persist" data-icon="grid" data-transition="slide">Services</a></li>
-                    <li><a href="#contacts" data-icon="info" data-transition="slide">Contact</a></li>
-                </ul>
-            </div>
-        </header>
+                <!--Icon Navigation-->
+                <div data-role="navbar">
+                    <ul id="navContainerUL">
+                        <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="aboutIcon" data-transition="pop">About Me</a></span></li>
+                        <li class="navList">
+                            <!--<a class="ui-btn ui-shadow ui-corner-all" href="#home" id="logoLink"><img class="ui-btn" id="Logo" src="Content/images/nav-icons/logo.png" alt="logo"></a>-->
+                            <div><a href="#home" class="ui-btn ui-shadow ui-corner-all"><img id="projectButton" src="Content/images/nav-icons/logo.png" alt="logo" /></a></div>
+                        </li>
+                        <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="pop">Contact Me</a></span></li>
+                        <!--<a href="#home" class="ui-btn ui-btn-active ui-state-persist" data-icon="custom" id="home" data-transition="slide"></a>-->
+                    </ul>
 
-        <section data-role="content">
-            <p>Your Services Content Goes here</p>
+                    <!--image button-->
+                    <div class="ui-grid-a ">
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
+                    </div>
+                </div>
+            </header>
 
-        </section>
+            <section data-role="content">
+                <p>Your Services Content Goes here</p>
 
-        <footer data-role="footer" data-position="fixed">
-            <h4>CopyRight 2015</h4>
-        </footer>
+            </section>
+
+            <!--Footer and copyright statement-->
+            <footer data-role="footer">
+                <h5 id="copyRight">&copy; 2015 Zhe Yan. All rights reserved.</h5>
+                <!--full site link-->
+                <a id="fullSite" href="http://yanzhe19.github.io/" data-role="none">Full Site</a>
+            </footer>
+        </div>
     </div>
 
     <!-- CONTACTS PAGE WRAPPER -->
@@ -345,7 +360,7 @@
 
                     <!--image button-->
                     <div class="ui-grid-a ">
-                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-btn-active ui-state-persist ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
                         <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
                     </div>
                 </div>
@@ -395,7 +410,7 @@
 
                     <!--image button-->
                     <div class="ui-grid-a ">
-                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-btn-active ui-state-persist ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
                         <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
                     </div>
                 </div>
@@ -445,7 +460,7 @@
 
                     <!--image button-->
                     <div class="ui-grid-a ">
-                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-btn-active ui-state-persist ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
                         <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
                     </div>
                 </div>
