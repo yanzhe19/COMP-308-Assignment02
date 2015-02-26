@@ -346,42 +346,84 @@
     </div>
 
     <!-- CONTACTS PAGE WRAPPER -->
-    <div data-role="page" id="contacts">
+    <div data-role="page" id="contacts" data-theme="f">
+        <div id="wrapper">
+            <!--header section-->
+            <header data-role="header">
 
-        <header data-role="header">
-            <h1>Contact Me</h1>
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#home" data-icon="home" data-transition="slide">Home</a></li>
-                    <li><a href="#projects" data-icon="gear" data-transition="flip">Projects</a></li>
-                    <li><a href="#services" data-icon="grid" data-transition="slide">Services</a></li>
-                    <li><a href="#contacts" class="ui-btn-active ui-state-persist" data-icon="info" data-transition="slide">Contact</a></li>
-                </ul>
-            </div>
-        </header>
+                <!--Icon Navigation-->
+                <div data-role="navbar">
+                    <ul id="navContainerUL">
+                        <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="aboutIcon" data-transition="pop">About Me</a></span></li>
+                        <li class="navList">
+                            <!--<a class="ui-btn ui-shadow ui-corner-all" href="#home" id="logoLink"><img class="ui-btn" id="Logo" src="Content/images/nav-icons/logo.png" alt="logo"></a>-->
+                            <div><a href="#home" class="ui-btn ui-shadow ui-corner-all"><img id="projectButton" src="Content/images/nav-icons/logo.png" alt="logo" /></a></div>
+                        </li>
+                        <li class="navList"><span><a href="#contacts" class="ui-btn-active ui-state-persist" data-icon="custom" id="contact" data-transition="pop">Contact Me</a></span></li>
+                        <!--<a href="#home" class="ui-btn ui-btn-active ui-state-persist" data-icon="custom" id="home" data-transition="slide"></a>-->
+                    </ul>
 
-        <section data-role="content">
-            <p>Your Contact info Goes Here</p>
-
-            <!--Social network icons-->
-            <div class="ui-corner-all" id="socialNetwork">
-                <div class="ui-bar ui-bar-f">
-                    <h3>Keep Connected with me!</h3>
+                    <!--image button-->
+                    <div class="ui-grid-a ">
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
+                    </div>
                 </div>
-                <div class="ui-body ui-body-f">
-                    <!--<button href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myLinkedin">myicon</button>-->
-                    <a href="http://ca.linkedin.com/in/ZheYan" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myLinkedin ui-btn-inline">Linkedin</a>
-                    <a href="https://www.facebook.com/daniel.yan.79827" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myFacebook ui-btn-inline">Facebook</a>
-                    <a href="https://www.youtube.com/channel/UCI2dR0rLodmXwa00mqjb2pg/feed?view_as=public" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myYoutube ui-btn-inline">Youtube</a>
-                    <a href="https://twitter.com/daniel_yan19" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myTwitter ui-btn-inline">Twitter</a>
+            </header>
+
+            <section data-role="content">
+                <h1 id="subheader">Contact</h1>
+                <p>I'd love to hear from you. Want to hire me? Any comments or ideas? Don't hesitate, talk to me!</p>
+
+                <form data-parsley-validate id="contactForm">
+                    <label for="name">Name : <span>*</span></label>
+                    <input type="text" placeholder="Name" required />
+
+                    <label for="email">Email: <span>*</span></label>
+                    <input type="email" placeholder="E-mail" required />
+
+                    <label for="info">Message:<span>*</span></label>
+                    <textarea style="height:100px;" placeholder="Enter your message here..." required></textarea>
+                </form>
+                <input type="submit" value="Send" name="submit" class="btn">
+
+                <br />
+                <hr />
+                <!--contact infor section-->
+                <h1 id="subheader">Contact Info</h1>
+                <div class="ui-body ui-body-f ui-corner-all">
+                    <strong>Phone Number:</strong>
+                    <a href="tel:6477696181" rel="external">647-769-6181</a>                    
                 </div>
-            </div>
 
-        </section>
+                <br />
+                <hr />
 
-        <footer data-role="footer" data-position="fixed">
-            <h4>CopyRight 2015</h4>
-        </footer>
+                <!--Social network icons-->
+                <div class="ui-corner-all" id="socialNetwork">
+                    <div class="ui-bar ui-bar-f">
+                        <h3>Keep Connected with me!</h3>
+                    </div>
+                    <div class="ui-body ui-body-f">
+                        <!--<button href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-myLinkedin">myicon</button>-->
+                        <a href="http://ca.linkedin.com/in/ZheYan" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myLinkedin ui-btn-inline">Linkedin</a>
+                        <a href="https://www.facebook.com/daniel.yan.79827" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myFacebook ui-btn-inline">Facebook</a>
+                        <a href="https://www.youtube.com/channel/UCI2dR0rLodmXwa00mqjb2pg/feed?view_as=public" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myYoutube ui-btn-inline">Youtube</a>
+                        <a href="https://twitter.com/daniel_yan19" class="ui-btn ui-shadow ui-btn-icon-notext ui-icon-myTwitter ui-btn-inline">Twitter</a>
+                    </div>
+                </div>
+
+                <!--back button-->
+                <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Go Back</a>
+            </section>
+
+            <!--Footer and copyright statement-->
+            <footer data-role="footer">
+                <h5 id="copyRight">&copy; 2015 Zhe Yan. All rights reserved.</h5>
+                <!--full site link-->
+                <a id="fullSite" href="http://yanzhe19.github.io/" data-role="none">Full Site</a>
+            </footer>
+        </div>
     </div>
 
     <!--peoject helpDeskProject page-->
