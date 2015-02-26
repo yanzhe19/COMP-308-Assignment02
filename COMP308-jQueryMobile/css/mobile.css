@@ -55,17 +55,6 @@
     background-size: contain;
 }
 
-/*navigation list style*/
-/*
-.navList {
-    border: dashed black;
-    width: 30%;
-    display: inline-block;
-    text-align: center;
-    display: block;
-    vertical-align: bottom;
-}*/
-
 /*navigation bar ul style*/
 #navContainerUL {
     vertical-align: bottom;
@@ -157,7 +146,7 @@ li span {
     margin-bottom: 0;
     color: #767474;
     font-weight: normal;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Handlee', cursive;
     font-style: italic;
 }
 
@@ -169,7 +158,7 @@ li span {
     margin-top: 0;
     color: #767474;
     font-weight: normal;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Open Sans', sans-serif;
     font-style: italic;
 }
 
@@ -181,7 +170,7 @@ li span {
     margin-top: 0;
     color: #767474;
     font-weight: normal;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: 'Handlee', cursive;
     /*font-style: italic;*/
 }
 /*About me page my image style*/
@@ -195,6 +184,7 @@ li span {
     list-style-type: disc;
     font-size: medium;
 }
+
 /*Social network icon*/
 .ui-icon-myLinkedin:after {
     background-image: url('../assets/img/icon/webicon-linkedin-m.png');
