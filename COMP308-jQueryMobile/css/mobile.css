@@ -82,14 +82,14 @@
     height: 80px;
 }
 
-    /*navigation bar li span and logo style*/
-    li span {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        text-align: center;
-        /*border:dashed black;*/
-    }
+/*navigation bar li span and logo style*/
+li span {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    /*border:dashed black;*/
+}
 
 /*style for a tag for logo*/
 /*#logoLink {
@@ -193,7 +193,7 @@
 /*about me page mission style*/
 #missionState {
     list-style-type: disc;
-    font-size:medium;
+    font-size: medium;
 }
 /*Social network icon*/
 .ui-icon-myLinkedin:after {
@@ -274,6 +274,32 @@
     -webkit-border-top-right-radius: inherit;
     border-top-right-radius: inherit;
 }
+
+/*project page thumbnail image style*/
+.has-special-thumb li a {
+    padding-left: 50% !important;
+}
+
+.thumbContainer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 45%;
+    /*border: dashed;*/
+}
+
+    .thumbContainer img {
+        position: absolute;
+        margin: auto;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
 
 /*footer style*/
 footer {

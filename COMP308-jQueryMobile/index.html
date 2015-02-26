@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/themes/mobileTheme.min.css" />
     <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
     <link href="css/mobile.css" rel="stylesheet" />
+
     <!-- Start WOWSlider.com HEAD section -->
     <link rel="stylesheet" type="text/css" href="engine1/style.css" />
     <script type="text/javascript" src="engine1/jquery.js"></script>
@@ -144,6 +145,7 @@
 
                     <!--body of the collapsible part-->
                     <div class="ui-body">
+
                         <div data-role="collapsibleset" data-theme="f" data-content-theme="f">
                             <div data-role="collapsible">
                                 <!--Education part-->
@@ -203,11 +205,9 @@
                     <ul id="navContainerUL">
                         <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="aboutIcon" data-transition="pop">About Me</a></span></li>
                         <li class="navList">
-                            <!--<a class="ui-btn ui-shadow ui-corner-all" href="#home" id="logoLink"><img class="ui-btn" id="Logo" src="Content/images/nav-icons/logo.png" alt="logo"></a>-->
                             <div><a href="#home" class="ui-btn ui-shadow ui-corner-all"><img id="projectButton" src="Content/images/nav-icons/logo.png" alt="logo" /></a></div>
                         </li>
                         <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="pop">Contact Me</a></span></li>
-                        <!--<a href="#home" class="ui-btn ui-btn-active ui-state-persist" data-icon="custom" id="home" data-transition="slide"></a>-->
                     </ul>
 
                     <!--image button-->
@@ -220,63 +220,36 @@
 
             <!--Content Section-->
             <section data-role="content">
-                <p>Your Project Content Goes here</p>
-
-                <ul data-role="listview" data-inset="true">
+                <h1 id="subheader">Projects</h1>
+                <ul data-role="listview" data-inset="true" class="has-special-thumb">
                     <li>
-                        <a href="#">
-                            <img src="assets/data1/images/1.jpg" alt="" />
-                            <h2>Broken Bells</h2>
-                            <p>Broken Bells</p>
+                        <a href="#helpDeskProject">
+                            <div class="thumbContainer">
+                                <img src="assets/data1/images/1.jpg" alt="" />
+                            </div>
+                            <h5>Help Desk</h5>
+                            <p>c#, Sql Server based</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="assets/data1/images/3.png" alt="" />
-                            <h2>Warning</h2>
-                            <p>Hot Chip</p>
+                        <a href="#healthTrackingProject">
+                            <div class="thumbContainer">
+                                <img src="assets/data1/images/3.png" alt="" />
+                            </div>
+                            <h5>Health Tracker</h5>
+                            <p>Android App</p>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <img src="assets/data1/images/5.jpg" alt="" />
-                            <h2>Wolfgang Amadeus Phoenix</h2>
-                            <p>Phoenix</p>
-                        </a>
-                    </li>
-                </ul>
-
-                <!--reference formated-->
-                <ul data-role="listview" data-inset="true">
-                    <li data-role="list-divider">Friday, October 8, 2010 <span class="ui-li-count">2</span></li>
-                    <li>
-                        <a href="index.html">
-                            <h2>Stephen Weber</h2>
-                            <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
-                            <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
-                            <p class="ui-li-aside"><strong>6:24</strong>PM</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="index.html">
-                            <h2>jQuery Team</h2>
-                            <p><strong>Boston Conference Planning</strong></p>
-                            <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
-                            <p class="ui-li-aside"><strong>9:18</strong>AM</p>
-                        </a>
-                    </li>
-                    <li data-role="list-divider">Thursday, October 7, 2010 <span class="ui-li-count">1</span></li>
-                    <li>
-                        <a href="index.html">
-                            <h2>Avery Walker</h2>
-                            <p><strong>Re: Dinner Tonight</strong></p>
-                            <p>Sure, let's plan on meeting at Highland Kitchen at 8:00 tonight. Can't wait!</p>
-                            <p class="ui-li-aside"><strong>4:48</strong>PM</p>
+                        <a href="#InventorySystemProject">
+                            <div class="thumbContainer">
+                                <img src="assets/data1/images/5.jpg" alt="" />
+                            </div>
+                            <h5>Inventory Management</h5>
+                            <p>System design</p>
                         </a>
                     </li>
                 </ul>
-
-
 
                 <!--back button-->
                 <a href="#home" data-role="button" data-icon="back" data-transition="slideup">Go Back</a>
@@ -355,7 +328,155 @@
         </footer>
     </div>
 
+    <!--peoject helpDeskProject page-->
+    <div data-role="page" id="helpDeskProject" data-theme="f">
+        <div id="wrapper">
+            <!--header section-->
+            <header data-role="header">
+                <!--Icon Navigation-->
+                <div data-role="navbar">
+                    <ul id="navContainerUL">
+                        <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="aboutIcon" data-transition="pop">About Me</a></span></li>
+                        <li class="navList">
+                            <div><a href="#home" class="ui-btn ui-shadow ui-corner-all"><img id="projectButton" src="Content/images/nav-icons/logo.png" alt="logo" /></a></div>
+                        </li>
+                        <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="pop">Contact Me</a></span></li>
+                    </ul>
 
+                    <!--image button-->
+                    <div class="ui-grid-a ">
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
+                    </div>
+                </div>
+            </header>
+
+            <!--Content Section-->
+            <section data-role="content">
+                <div class="ui-corner-all ui-bar-f">
+                    <div class="ui-bar">
+                        <h3 id="subheader">Help desk system</h3>
+                    </div>
+                    <div class="ui-body ui-body-f">
+                        <img src="assets/data1/images/1.jpg" id="myImage" alt="" />
+                        <br>
+                        <br />
+                        <img src="assets/data1/images/2.jpg" id="myImage" alt="" />
+                        <p>GUI based helpdesk management system which can facilitate the daily operation of helpdesk.</p>
+                    </div>
+                </div>
+                <!--back button-->
+                <a href="#projects" data-role="button" data-icon="back" data-transition="slideup">Go Back</a>
+            </section>
+
+            <!--Footer and copyright statement-->
+            <footer data-role="footer">
+                <h5 id="copyRight">&copy; 2015 Zhe Yan. All rights reserved.</h5>
+                <!--full site link-->
+                <a id="fullSite" href="http://yanzhe19.github.io/" data-role="none">Full Site</a>
+            </footer>
+        </div>
+    </div>
+
+    <!--peoject healthTrackingProject page-->
+    <div data-role="page" id="healthTrackingProject" data-theme="f">
+        <div id="wrapper">
+            <!--header section-->
+            <header data-role="header">
+                <!--Icon Navigation-->
+                <div data-role="navbar">
+                    <ul id="navContainerUL">
+                        <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="aboutIcon" data-transition="pop">About Me</a></span></li>
+                        <li class="navList">
+                            <div><a href="#home" class="ui-btn ui-shadow ui-corner-all"><img id="projectButton" src="Content/images/nav-icons/logo.png" alt="logo" /></a></div>
+                        </li>
+                        <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="pop">Contact Me</a></span></li>
+                    </ul>
+
+                    <!--image button-->
+                    <div class="ui-grid-a ">
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
+                    </div>
+                </div>
+            </header>
+
+            <!--Content Section-->
+            <section data-role="content">
+                <div class="ui-corner-all ui-bar-f">
+                    <div class="ui-bar">
+                        <h3 id="subheader">Android Health Tracking App</h3>
+                    </div>
+                    <div class="ui-body ui-body-f">
+                        <img src="assets/data1/images/3.png" id="myImage" alt="" />
+                        <br>
+                        <br />
+                        <img src="assets/data1/images/4.png" id="myImage" alt="" />
+                        <p>This app’s target is to provide an alternative easier way to record, calculate and monitor body’s health.</p>
+                    </div>
+                </div>
+                <!--back button-->
+                <a href="#projects" data-role="button" data-icon="back" data-transition="slideup">Go Back</a>
+            </section>
+
+            <!--Footer and copyright statement-->
+            <footer data-role="footer">
+                <h5 id="copyRight">&copy; 2015 Zhe Yan. All rights reserved.</h5>
+                <!--full site link-->
+                <a id="fullSite" href="http://yanzhe19.github.io/" data-role="none">Full Site</a>
+            </footer>
+        </div>
+    </div>
+
+    <!--peoject InventorySystemProject page-->
+    <div data-role="page" id="InventorySystemProject" data-theme="f">
+        <div id="wrapper">
+            <!--header section-->
+            <header data-role="header">
+                <!--Icon Navigation-->
+                <div data-role="navbar">
+                    <ul id="navContainerUL">
+                        <li class="navList"><span><a href="#aboutMe" data-icon="custom" id="aboutIcon" data-transition="pop">About Me</a></span></li>
+                        <li class="navList">
+                            <div><a href="#home" class="ui-btn ui-shadow ui-corner-all"><img id="projectButton" src="Content/images/nav-icons/logo.png" alt="logo" /></a></div>
+                        </li>
+                        <li class="navList"><span><a href="#contacts" data-icon="custom" id="contact" data-transition="pop">Contact Me</a></span></li>
+                    </ul>
+
+                    <!--image button-->
+                    <div class="ui-grid-a ">
+                        <div class="ui-block-a" id="projectBlock"><a href="#projects" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="projectBtnA"><img id="projectButton" src="Content/images/projects_2.png" alt="" /></a></div>
+                        <div class="ui-block-b" id="serviceBlock"><a href="#services" class="ui-btn ui-shadow ui-corner-all" data-transition="pop" id="serviceBtnA"><img id="serviceButton" src="Content/images/service_2.png" alt="" /></a></div>
+                    </div>
+                </div>
+            </header>
+
+            <!--Content Section-->
+            <section data-role="content">
+                <div class="ui-corner-all ui-bar-f">
+                    <div class="ui-bar">
+                        <h3 id="subheader">Inventory Management System</h3>
+                    </div>
+                    <div class="ui-body ui-body-f">
+                        <img src="assets/data1/images/5.jpg" id="myImage" alt="" />
+                        <br>
+                        <br />
+                        <img src="assets/data1/images/6.jpg" id="myImage" alt="" />
+                        <p>When there is a purchase, sale or promotion event happened, system operated as assigned.</p>
+                    </div>
+                </div>
+                <!--back button-->
+                <a href="#projects" data-role="button" data-icon="back" data-transition="slideup">Go Back</a>
+            </section>
+
+            <!--Footer and copyright statement-->
+            <footer data-role="footer">
+                <h5 id="copyRight">&copy; 2015 Zhe Yan. All rights reserved.</h5>
+                <!--full site link-->
+                <a id="fullSite" href="http://yanzhe19.github.io/" data-role="none">Full Site</a>
+            </footer>
+        </div>
+    </div>
     <!-- JavaScript Section -->
     <script src="Scripts/jquery-1.8.0.min.js"></script>
     <script src="Scripts/jquery.mobile-1.4.5.min.js"></script>
