@@ -31,6 +31,7 @@
     /*border:dashed black;*/
 }
 
+/*+++++++++++++++++++++++++++++++++Nav Section++++++++++++++++++++++++++++++++++++++++++++*/
 /*icon navigation style*/
 .nav-glyphish-example .ui-btn {
     padding-top: 40px !important;
@@ -84,14 +85,6 @@ li span {
     /*border:dashed black;*/
 }
 
-/*style for a tag for logo*/
-/*#logoLink {
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        border:dashed black;
-    }*/
-
 /*logo style*/
 #Logo {
     padding: 0;
@@ -100,7 +93,6 @@ li span {
     max-height: 80px;
     border: dashed;
 }
-
 
 /*project image button style*/
 #projectButton, #serviceButton {
@@ -132,7 +124,9 @@ li span {
     text-align: center;
     border: dashed black;
 }
+/*+++++++++++++++++++++++++++++++++End of Nav Section++++++++++++++++++++++++++++++++++++++*/
 
+/*+++++++++++++++++++++++++++++++++Header text style++++++++++++++++++++++++++++++++++++++++*/
 /*welcome statement style*/
 #heading_supersize {
     font-size: 12.5vmin;
@@ -177,18 +171,15 @@ li span {
     font-family: 'Handlee', cursive;
     /*font-style: italic;*/
 }
-/*About me page my image style*/
-#myImage {
-    height: auto;
-    width: 100%;
-}
 
 /*about me page mission style*/
 #missionState {
     list-style-type: disc;
     font-size: medium;
 }
+/*+++++++++++++++++++++++++++++++++End Header text style++++++++++++++++++++++++++++++++++++++++*/
 
+/*+++++++++++++++++++++++++++++Social network icon section++++++++++++++++++++++++++++++++++++++*/
 /*Social network icon*/
 .ui-icon-myLinkedin:after {
     background-image: url('../assets/img/icon/webicon-linkedin-m.png');
@@ -268,6 +259,13 @@ li span {
     -webkit-border-top-right-radius: inherit;
     border-top-right-radius: inherit;
 }
+/*+++++++++++++++++++++++++++++End of Social network icon section+++++++++++++++++++++++++++*/
+
+/*About me page my image style*/
+#myImage {
+    height: auto;
+    width: 100%;
+}
 
 /*project page thumbnail image style*/
 .has-special-thumb li a {
@@ -294,6 +292,7 @@ li span {
         max-height: 100%;
     }
 
+/*+++++++++++++++++++++++++++++++++++++++++++Footer section+++++++++++++++++++++++++++++++++++++++++++*/
 /*footer style*/
 footer {
     text-align: center;
@@ -311,3 +310,4 @@ footer {
     font-size: medium;
     /*border: dotted black;*/
 }
+/*+++++++++++++++++++++++++++++++++++++++++++End of Footer section+++++++++++++++++++++++++++++++++++++++++++*/
